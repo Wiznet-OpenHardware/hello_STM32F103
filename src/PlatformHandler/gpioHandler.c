@@ -113,3 +113,16 @@ void GPIO_Configuration(void)
 	GPIO_InitStructure.GPIO_Pin = CS_W5300_PIN ;
 	GPIO_Init(CS_W5300_PORT, &GPIO_InitStructure);
 }
+
+
+void Reset_W5300(void)
+{
+	GPIO_ResetBits(RESET_W5300_PORT, RESET_W5300_PIN);
+	GPIO_SetBits(RESET_W5300_PORT, RESET_W5300_PIN);
+	delay(100);
+}
+
+void delay(uint32_t nCount)
+{
+	for(; nCount !=0; nCount--);
+}

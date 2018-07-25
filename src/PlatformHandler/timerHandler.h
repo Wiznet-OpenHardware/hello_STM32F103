@@ -8,7 +8,6 @@
 #ifndef PLATFORMHANDLER_TIMERHANDLER_H_
 #define PLATFORMHANDLER_TIMERHANDLER_H_
 
-
 #include "stm32f10x_tim.h"
 
 void Timer_Configuration(void);

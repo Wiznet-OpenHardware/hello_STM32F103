@@ -37,6 +37,7 @@
 #include "gpioHandler.h"
 #include "timerHandler.h"
 #include "uartHandler.h"
+#include "fsmcHandler.h"
 #include "common.h"
 
 // ----------------------------------------------------------------------------
@@ -120,6 +121,8 @@ main(int argc, char* argv[])
 	RCC_Configuration();
 	NVIC_Configuration();
 	GPIO_Configuration();
+	FSMC_Configuratino();
+	Reset_W5300();
 	Debug_USART_Configuration();
 	Timer_Configuration();
 	for(i=0; i<4; i++)

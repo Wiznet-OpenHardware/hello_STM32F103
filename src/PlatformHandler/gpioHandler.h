@@ -13,4 +13,7 @@
 
 void GPIO_Configuration(void);
 
+void Reset_W5300(void);
+void delay(uint32_t nCount);
+
 #endif /* PLATFORMHANDLER_GPIOHANDLER_H_ */

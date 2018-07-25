@@ -8,6 +8,7 @@
 #ifndef PLATFORMHANDLER_NVICHANDLER_H_
 #define PLATFORMHANDLER_NVICHANDLER_H_
 
+
 #include "misc.h"
 
 void NVIC_Configuration(void);
